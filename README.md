@@ -1,69 +1,92 @@
-# Facial Emotion Classifier
+# **Facial Emotion Classifier**
 
 ![Kaggle](https://img.shields.io/badge/Dataset-Kaggle-blue.svg) 
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![Notebook](https://img.shields.io/badge/Notebook-Jupyter-orange)
 
-# Project Overview
+## Project Overview
 
-The goal of this project is to create a deep learning model capable of accurately categorizing facial expressions into seven distinct classes:</br>
-***Angry, Disgust, Fear, Happy, Sad, Surprise, and Neutral***
+<p align="justify">
+This project is based on the tutorial by **Nicholas Renotte** on YouTube, where we create a deep learning model capable of accurately categorizing facial expressions into seven distinct classes:
+</p>
 
-We will leverage the power of **Convolutional Neural Networks (CNNs)**, which have proven to be highly effective in image classification tasks.</br>
-Our approach involves training a CNN model from scratch using the FER-2013 dataset.
+<p align="justify">
+- **Angry**
+- **Disgust**
+- **Fear**
+- **Happy**
+- **Sad**
+- **Surprise**
+- **Neutral**
+</p>
 
-</br>
+<p align="justify">
+We will leverage the power of **Convolutional Neural Networks (CNNs)**, which have proven to be highly effective in image classification tasks. Our approach involves training a CNN model from scratch using the FER-2013 dataset.
+</p>
 
-<img src="Al-Pacino.jpeg">
+<img src="Al-Pacino.jpeg" alt="Sample Image" width="400">
 
-</br>
+## Data Description
 
-# Data Description
+<p align="justify">
+The FER-2013 dataset consists of grayscale images of faces, each measuring 48x48 pixels. These images have undergone preprocessing to ensure consistent alignment and similar spatial occupation across all samples. The dataset comprises a total of **28,709** images in the training set and **7,178** images in the public test set.
+</p>
 
-The FER-2013 dataset consists of grayscale images of faces, each measuring 48x48 pixels.</br>
-These images have undergone preprocessing to ensure consistent alignment and similar spatial occupation across all samples.</br>
-The dataset comprises a total of 24,400 images, with 28,709 images allocated to the training set and 7,178 images designated for the public test set.
+## Main Process
 
-# Main Process
+### Steps
 
-## Steps
+<p align="justify">
+1. [**First Step: Data Exploration and Organization**](#step1)
+2. [**Second Step: Data Preprocessing**](#step2)
+3. [**Third Step: Model Building and Training**](#step3)
+</p>
 
-1. [First Organization](#step1)
-2. [Second Step: Data Preprocessing](#step2)
-3. [Third and Final Step: Modeling](#step3)
-
-</br>
+---
 
 <a name="step1"></a>
-## &emsp; 1. First Organization
+## 1. First Step: Data Exploration and Organization
 
-In the first steps we'll get to know about our images and their specifications.</br>
-To get familiar with the project, we'll show them.
-###  &emsp; **Packages**
+<p align="justify">
+In the first steps, we will explore the images and their specifications to get familiar with the project. We’ll begin by loading the necessary libraries and displaying some sample images from the dataset.
+</p>
 
-&emsp;  &emsp; ***Tensorflow***</br>
-&emsp;  &emsp; ***OpenCV***</br>
-&emsp;  &emsp; ***os, random, time, pickle***</br>
-&emsp;  &emsp; ***Numpy***</br>
-&emsp;  &emsp; ***Pandas***</br>
-&emsp;  &emsp; ***Matplotlib***</br>
+### Packages Used
+
+<p align="justify">
+- **TensorFlow**
+- **OpenCV**
+- **os, random, time, pickle**
+- **NumPy**
+- **Pandas**
+- **Matplotlib**
+</p>
+
+---
 
 <a name="step2"></a>
+## 2. Second Step: Data Preprocessing
 
-## &emsp; 2. Second Step: Data Preprocessing
+<p align="justify">
+In this step, we'll prepare the dataset for modeling. Given that the dataset is well-curated, only minimal preprocessing is needed to make it trainable. This includes scaling and splitting the data into training and testing sets.
+</p>
 
-Here we'll equip our dataset to be ready foe modeling.</br>
-As the dataset is well gathered and processed before, there is no need to take a lot of effort to make it trainable.
-
+---
 
 <a name="step3"></a>
+## 3. Third Step: Model Building and Training
 
-## &emsp; 3. Third and Final Step: Modeling
+<p align="justify">
+Here, we define the architecture of the Convolutional Neural Network (CNN) model and train it using the preprocessed dataset. We also evaluate the model’s performance using various metrics and visualize its accuracy and loss over the training process.
+</p>
 
-In this step we train the convolutional neural network model, which we have built.
+---
 
-# Resources
+## Resources
 
-The data we have used in this project was downloaded from <a href = "https://www.kaggle.com/datasets/msambare/fer2013" style="text-decoration:none;" target="_blank"> **Kaggle** </a>.</br>
-There are more useful information about this dataset in the notebook.</br>
-You can also access the notebook uploaded on kaggle website through <a href = "https://www.kaggle.com/code/mamishere/customer-churn-complete-analysis-and-prediction/notebook" style="text-decoration:none;" target="_blank"> **This Link** </a>. 
+<p align="justify">
+The data used in this project was sourced from [**Kaggle**](https://www.kaggle.com/datasets/msambare/fer2013). The project is inspired by a YouTube tutorial from [**Nicholas Renotte**](https://www.youtube.com/c/NicholasRenotte). For more detailed information, refer to the notebook available on [**Kaggle**](https://www.kaggle.com/code/mamishere/customer-churn-complete-analysis-and-prediction/notebook).
+</p>
+
+---
+
